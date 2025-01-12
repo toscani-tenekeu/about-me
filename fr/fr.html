@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>Toscani Tenekeu Portfolio | Full-Stack - UX/UI - Cloud</title>
+</head>
+
+<body>
+
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="" class="nav__logo" style="font-weight: bolder; font-size: larger;">Toscani</a>
+            </div>
+        
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link"><i class="bx bx-user"></i> À propos</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link"><i class="bx bx-code-alt"></i> Compétences</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link"><i class="bx bx-briefcase"></i> Travaux</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link"><i class="bx bx-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        
+            <!-- Sélecteur de langue et bouton d'application -->
+            <div class="nav__lang">
+                <select id="language-select" class="nav__select" onchange="changeLanguage2(this)">
+                    <option value="fr">Français</option>
+                    <option value="en">Anglais</option>
+                </select>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+
+        <style>
+            /* Icônes dans la navigation */
+            .nav__logo i, .nav__link i {
+                margin-right: 8px; /* Espacement entre l'icône et le texte */
+                font-size: 1.2rem;
+            }
+        
+            /* Style pour le select de langue */
+            .nav__lang {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            .nav__select {
+                padding: 5px 10px;
+                margin-right: 10px;
+                font-size: 1rem;
+                background-color: #333;
+                color: white;
+                border: none;
+                border-radius: 5px;
+            }
+                
+            /* Styles généraux pour la navigation */
+            .nav {
+                padding: 20px;
+            }
+        
+            .nav__menu {
+                display: flex;
+            }
+        
+            .nav__list {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .nav__item {
+                margin-right: 20px;
+            }
+        
+            .nav__link {
+                color: #333;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+            }
+        
+            .nav__link:hover {
+                color: #0dd8b6;
+            }
+        
+        </style>
+    </header>
+
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Bonjour,<br>Je suis <span class="home__title-color">Toscani (Modjou) Tenekeu</span><br>Développeur Full-Stack | <br> Designer UI/UX | Architecte Cloud</h1>
+                <a href="#contact" class="button">Contactez-moi</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/toscani-tenekeu" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://twitter.com/toscani_tenekeu" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+                <a href="https://github.com/toscani-tenekeu" class="footer__icon"><i class='bx bxl-github'></i></a>
+                <a href="https://instagram.com/toscani_tenekeu" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+                <a href="https://portfolio-toscani.vercel.app/" class="footer__icon"><i class='bx bx-globe'></i></a>
+                <a href="https://youtube.com/@toscanisoft" class="footer__icon"><i class='bx bxl-youtube'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <image class="home__blob-img" x="50" y="60" href="../assets/img/profil.png"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+   <!--===== SECTION À PROPOS =====-->
+<section class="about section" id="about">
+    <h2 class="section-title"><i class="fas fa-user"></i> À propos de moi</h2>
+
+    <div class="about__container">
+        <div class="about__content">
+            <h2 class="about__subtitle"><i class="fas fa-hand-wave"></i>Bonjour, je suis TOSCANI MODJOU TENEKEU</h2>
+            <p class="about__text">
+                <i class="fas fa-birthday-cake"></i> J'ai 20 ans, actuellement en troisième année du cycle d'ingénierie en informatique.
+            </p>
+            <p class="about__text">
+                <i class="fas fa-code"></i> Développeur Full-Stack avec un œil pour les détails et une solide base en programmation, design, cloud computing et plus encore.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Inline CSS for Styling -->
+<style>
+    :root {
+        --hue-color: 220;
+    }
+
+    .about {
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: hsl(var(--hue-color), 56%, 12%);
+        color: #fff;
+        border-radius: 1rem;
+        width: 90%;
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+        box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .section-title {
+        font-size: 2rem;
+        color: #E9E9E9;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .section-title i {
+        margin-right: 0.5rem;
+        color: #007bff;
+    }
+
+    .about__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__content {
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .about__subtitle {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #007bff;
+    }
+
+    .about__subtitle i {
+        margin-right: 0.5rem;
+        color: #007bff;
+    }
+
+    .about__text {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: #DEDEDE;
+    }
+
+    .about__text i {
+        color: #007bff;
+        margin-right: 0.5rem;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Remove underline from section title */
+    .section-title:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: none;
+        margin: 0 auto;
+    }
+</style>
+
+<!--===== SECTION COMPÉTENCES =====-->
+<section class="skills section" id="skills">
+    <h2 class="section-title"><i class="fas fa-cogs"></i> Compétences</h2>
+
+    <div class="skills__container bd-grid">
+        <!-- Développement Web -->
+        <div class="skills__item">
+            <h2 class="skills__subtitle"><i class="fas fa-laptop-code"></i> Développement Web</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> React.js</li>
+                <li><i class="fas fa-check-circle"></i> Next.js</li>
+                <li><i class="fas fa-check-circle"></i> Tailwind CSS</li>
+                <li><i class="fas fa-check-circle"></i> Bootstrap</li>
+                <li><i class="fas fa-check-circle"></i> Laravel</li>
+                <li><i class="fas fa-check-circle"></i> Express.js</li>
+                <li><i class="fas fa-check-circle"></i> Framer Motion</li>
+            </ul>
+        </div>
+
+        <!-- Développement Mobile -->
+        <div class="skills__item">
+            <h2 class="skills__subtitle"><i class="fas fa-mobile-alt"></i> Développement Mobile</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Flutter</li>
+            </ul>
+        </div>
+
+        <!-- Développement Desktop -->
+        <div class="skills__item">
+            <h2 class="skills__subtitle"><i class="fas fa-desktop"></i> Développement Desktop</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Electron.js</li>
+                <li><i class="fas fa-check-circle"></i> Tkinter (Python)</li>
+                <li><i class="fas fa-check-circle"></i> Swing (Java)</li>
+            </ul>
+        </div>
+
+        <!-- Langages de Programmation -->
+        <div class="skills__item">
+            <h2 class="skills__subtitle"><i class="fas fa-code"></i> Langages de Programmation</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Python</li>
+                <li><i class="fas fa-check-circle"></i> Java</li>
+                <li><i class="fas fa-check-circle"></i> JavaScript</li>
+                <li><i class="fas fa-check-circle"></i> PHP</li>
+                <li><i class="fas fa-check-circle"></i> C++</li>
+                <li><i class="fas fa-check-circle"></i> C</li>
+                <li><i class="fas fa-check-circle"></i> TypeScript</li>
+            </ul>
+        </div>
+
+        <!-- Cloud Computing -->
+        <div class="skills__item">
+            <h2 class="skills__subtitle"><i class="fas fa-cloud"></i> Cloud Computing</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> AWS</li>
+                <li><i class="fas fa-check-circle"></i> Docker</li>
+            </ul>
+        </div>
+
+        <!-- Design UI/UX -->
+        <div class="skills__item">
+            <h2 class="skills__subtitle"><i class="fas fa-paint-brush"></i> Design UI/UX</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Wireframing</li>
+                <li><i class="fas fa-check-circle"></i> Prototypage</li>
+                <li><i class="fas fa-check-circle"></i> Recherche Utilisateur</li>
+                <li><i class="fas fa-check-circle"></i> Figma</li>
+                <li><i class="fas fa-check-circle"></i> Adobe XD</li>
+            </ul>
+        </div>
+
+        <!-- Intelligence Artificielle et Machine Learning -->
+        <div class="skills__item">
+            <h2 class="skills__subtitle"><i class="fas fa-robot"></i> Intelligence Artificielle et Machine Learning</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Deep Learning</li>
+                <li><i class="fas fa-check-circle"></i> Scikit-learn</li>
+                <li><i class="fas fa-check-circle"></i> TensorFlow</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Inline CSS -->
+<style>
+    .skills {
+        margin: 2rem auto;
+        padding: 2rem;
+        width: 90%;
+        background-color: hsl(var(--hue-color), 56%, 12%);
+        border-radius: 1rem;
+        box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.6);
+    }
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        text-decoration: none;
+    }
+    .skills__container {
+        display: grid;
+        gap: 1.5rem;
+    }
+    .skills__item {
+        background-color: transparent;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+    }
+    .skills__subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+    li {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        color: #ddd;
+    }
+    i {
+        color: #007bff;
+        margin-right: 0.5rem;
+    }
+</style>
+
+<section class="work section" id="work">
+    <h2 class="section-title"><i class="fas fa-briefcase"></i> Travaux</h2>
+
+    <div class="work__container bd-grid">
+        <!-- Projet 1 -->
+        <div class="work__card">
+            <img src="../assets/img/work1.jpg" alt="Système de Gestion des Stocks avec IA" class="work__img">
+            <h3><i class="fas fa-cubes"></i> Système de Gestion des Stocks avec IA</h3>
+            <p>Développement d'un système de gestion des stocks alimenté par l'IA utilisant Python et TensorFlow. Le système automatise le suivi des stocks, prédit la demande et optimise les niveaux de stock.</p>
+            <a href="https://github.com/yourgithub/ai-inventory-system" class="work__button" target="_blank">
+                <i class="fab fa-github"></i> Voir le projet
+            </a>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="work__card">
+            <img src="../assets/img/work2.jpg" alt="Night Hoster" class="work__img">
+            <h3><i class="fas fa-cloud"></i> Night Hoster</h3>
+            <p>Développement d'une plateforme d'hébergement web offrant des services d'hébergement sécurisés et fiables avec des mises à jour en temps réel sur l'état des serveurs, des sauvegardes automatiques et des panneaux de contrôle faciles à utiliser.</p>
+            <a href="https://github.com/yourgithub/night-hoster" class="work__button" target="_blank">
+                <i class="fab fa-github"></i> Voir le projet
+            </a>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="work__card">
+            <img src="../assets/img/work3.jpg" alt="Englify" class="work__img">
+            <h3><i class="fas fa-language"></i> Englify</h3>
+            <p>Une application d'apprentissage des langues qui aide les utilisateurs à améliorer leurs compétences en anglais grâce à des exercices interactifs, des quiz et des retours en temps réel. Développée avec Flutter pour les appareils mobiles.</p>
+            <a href="https://github.com/yourgithub/englify" class="work__button" target="_blank">
+                <i class="fab fa-github"></i> Voir le projet
+            </a>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="work__card">
+            <img src="../assets/img/work4.jpg" alt="IntelliLearn237" class="work__img">
+            <h3><i class="fas fa-graduation-cap"></i> IntelliLearn237</h3>
+            <p>Une plateforme éducative conçue pour aider les étudiants à améliorer leurs performances académiques grâce à des parcours d'apprentissage personnalisés et à un tutorat alimenté par l'IA. La plateforme prend en charge une variété de matières.</p>
+            <a href="https://github.com/yourgithub/intellilearn237" class="work__button" target="_blank">
+                <i class="fab fa-github"></i> Voir le projet
+            </a>
+        </div>
+
+        <!-- Projet 5 -->
+        <div class="work__card">
+            <img src="../assets/img/work5.jpg" alt="Système CRM Personnalisé" class="work__img">
+            <h3><i class="fas fa-users"></i> Système CRM Personnalisé</h3>
+            <p>Un système CRM personnalisable conçu pour rationaliser les relations clients, le suivi des ventes et les efforts marketing. Construit avec Laravel pour le back-end et Vue.js pour le front-end.</p>
+            <a href="https://github.com/yourgithub/custom-crm-system" class="work__button" target="_blank">
+                <i class="fab fa-github"></i> Voir le projet
+            </a>
+        </div>
+
+        <!-- Projet 6 -->
+        <div class="work__card">
+            <img src="../assets/img/work6.jpg" alt="Éditeur de Code IDE" class="work__img">
+            <h3><i class="fas fa-code"></i> Éditeur de Code IDE</h3>
+            <p>Un IDE léger pour le développement web qui permet aux utilisateurs d'écrire, tester et prévisualiser du code en temps réel. Construit avec Electron.js et prend en charge plusieurs langages et frameworks.</p>
+            <a href="https://github.com/yourgithub/code-editor-ide" class="work__button" target="_blank">
+                <i class="fab fa-github"></i> Voir le projet
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CSS en ligne pour le style -->
+<style>
+    .work {
+        margin: 2rem auto;
+        padding: 2rem;
+        width: 90%;
+        background-color: hsl(var(--hue-color), 56%, 12%);
+        box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.6);
+        border-radius: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .work__container {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .work__card {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .work__card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .work__img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .work__button {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .work__button:hover {
+        background-color: #0056b3;
+    }
+
+    .work__button i {
+        margin-right: 0.5rem;
+    }
+</style>
+
+<!--===== SECTION LANGUES =====-->
+<section class="languages section" style="border-radius: 1rem; background-color: hsl(var(--hue-color), 56%, 12%); width: 90%; margin: 2rem auto; padding: 20px;">
+    <h2 class="section-title" style="text-decoration: none; color: white;"><i class="fas fa-language"></i> Langues</h2>
+    <ul class="languages__list" style="list-style-type: none; padding: 0; color: white; text-align: left;">
+        <li><i class="fas fa-check-circle"></i> Français : Intermédiaire</li>
+        <li><i class="fas fa-check-circle"></i> Anglais : Débutant</li>
+        <li><i class="fas fa-check-circle"></i> Langue maternelle : Avancé</li>
+    </ul>
+</section>
+
+<!--===== SECTION CENTRES D'INTÉRÊT =====-->
+<section class="interests section" style="border-radius: 1rem; background-color: hsl(var(--hue-color), 56%, 12%); width: 90%; margin: 2rem auto; padding: 20px;">
+    <h2 class="section-title" style="text-decoration: none; color: white;"><i class="fas fa-heart"></i> Centres d'Intérêt</h2>
+    <ul class="interests__list" style="list-style-type: none; padding: 0; color: white; text-align: left;">
+        <li><i class="fas fa-book"></i> Lecture</li>
+        <li><i class="fas fa-plane"></i> Voyage</li>
+        <li><i class="fas fa-futbol"></i> Sports</li>
+        <li><i class="fas fa-music"></i> Musique</li>
+    </ul>
+</section>
+
+<!--===== SECTION EXPÉRIENCE PROFESSIONNELLE =====-->
+<section class="experience section" style="border-radius: 1rem; background-color: hsl(var(--hue-color), 56%, 12%); width: 90%; margin: 2rem auto; padding: 20px;">
+    <h2 class="section-title" style="text-decoration: none; color: white;"><i class="fas fa-briefcase"></i> Expérience Professionnelle</h2>
+
+    <div class="experience__item" style="color: white; padding: 10px;">
+        <p><i class="fas fa-building"></i> Entreprise : <a href="https://worketyamo.itengineeringpro.fr" target="_blank" rel="noopener noreferrer" style="color: #0dd8b6;">Worketyamo</a></p>
+        <p><i class="fas fa-user-tie"></i> Poste : Développeur Web</p>
+        <p><i class="fas fa-calendar-alt"></i> Juillet - Septembre 2024</p>
+        <ul style="padding-left: 20px;">
+            <li><i class="fas fa-check-circle"></i> Participation au développement de l'application "Avendre" : conception de l'interface utilisateur, mise en œuvre de fonctionnalités de recherche avancées et optimisation des performances.</li>
+            <li><i class="fas fa-check-circle"></i> Collaboration au projet "KPromo" : mise en place d'un système de géolocalisation pour afficher les promotions locales.</li>
+            <li><i class="fas fa-check-circle"></i> Acquisition de compétences solides en React, HTML, CSS et JavaScript au sein d'une équipe dynamique.</li>
+        </ul>
+    </div><br>
+
+    <div class="experience__item" style="color: white; padding: 10px;">
+        <p><i class="fas fa-building"></i> Entreprise : <a href="https://www.ebc.com" target="_blank" rel="noopener noreferrer" style="color: #0dd8b6;">EBC (Estrella Business Center)</a></p>
+        <p><i class="fas fa-user-tie"></i> Poste : Graphiste - Développeur Web</p>
+        <p><i class="fas fa-calendar-alt"></i> Juillet - Septembre 2023</p>
+        <ul style="padding-left: 20px;">
+            <li><i class="fas fa-check-circle"></i> Conception et création d'affiches publicitaires.</li>
+            <li><i class="fas fa-check-circle"></i> Développement de sites web et d'applications web.</li>
+        </ul>
+    </div>
+</section>
+
+<!--===== SECTION FORMATIONS ET CERTIFICATIONS =====-->
+<section class="trainings-certifications section" id="trainings-certifications" style="background-color: hsl(var(--hue-color), 56%, 12%); width: 90%; margin: 0 auto; padding: 20px; border-radius: 1rem;">
+    <h2 class="section-title" style="text-decoration: none; color: white;"><i class="fas fa-certificate"></i> Formations et Certifications</h2>
+
+    <div class="trainings" style="color: white; padding: 10px;">
+        <h3><i class="fas fa-graduation-cap"></i> Formations</h3>
+        <ul style="padding-left: 20px;">
+            <li><i class="fas fa-check-circle"></i> 2024 : BTS en Gestion des Systèmes d'Information (Mention BIEN) | HINTEL HIGHER INSTITUTE</li>
+            <li><i class="fas fa-check-circle"></i> 2023 : Stage Intensif au ESTRELLA BUSINESS CENTER</li>
+            <li><i class="fas fa-check-circle"></i> 2022 : Baccalauréat C | Institut Petou II</li>
+            <li><i class="fas fa-check-circle"></i> 2021 : Probatoire C | Collège Bilingue MEKOUJA</li>
+            <li><i class="fas fa-check-circle"></i> 2018 : BEPC | Collège DJOUMESSI</li>
+        </ul>
+    </div>
+
+    <div class="certifications" style="color: white; padding: 10px;">
+        <h3><i class="fas fa-award"></i> Certifications</h3>
+        <ul style="padding-left: 20px;">
+            <li style="display: flex; flex-direction: column; align-items: left; margin-bottom: 30px;">
+                <img src="../assets/img/devops.jpg" alt="AWS Certification" style="width: 300px; height: 300px; margin-bottom: 20px; object-fit: cover;">
+                <div>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/PCOG3YAMM62V" target="_blank" style="color: #0dd8b6;">
+                        <i class="fas fa-certificate"></i> Préparation à l'examen : AWS Certified DevOps Engineer - Professional Specialization
+                    </a>
+                    <p>Whizlabs - Octobre 2024</p>
+                </div>
+            </li>
+            <li style="display: flex; flex-direction: column; align-items: left; margin-bottom: 30px;">
+                <img src="../assets/img/frontend.jpg" alt="Meta Certification" style="width: 300px; height: 300px; margin-bottom: 20px; object-fit: cover;">
+                <div>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/H2VH3MARJF98" target="_blank" style="color: #0dd8b6;">
+                        <i class="fas fa-certificate"></i> Spécialisation Développeur Front-End de Meta
+                    </a>
+                    <p>Meta - Septembre 2024</p>
+                </div>
+            </li>
+            <li style="display: flex; flex-direction: column; align-items: left; margin-bottom: 30px;">
+                <img src="../assets/img/ui_ux.jpg" alt="Microsoft Certification" style="width: 300px; height: 300px; margin-bottom: 20px; object-fit: cover;">
+                <div>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/LRLKBOSJ0JV9" target="_blank" style="color: #0dd8b6;">
+                        <i class="fas fa-certificate"></i> Spécialisation Design UX de Microsoft
+                    </a>
+                    <p>Microsoft - Août 2024</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--===== SECTION BOUTON DE TÉLÉCHARGEMENT =====-->
+<div class="download-cv-section" style="text-align: center; padding: 20px 0;">
+    <a href="../assets/files/CV_toscani_tenekeu.pdf" download class="button download-cv-button">
+        <i class="fas fa-download" style="color: #117; font-size: x-large;"></i> Télécharger mon CV
+    </a>  
+</div>
+
+<!--===== SECTION CONTACT =====-->
+<section class="contact section" id="contact">
+    <h2 class="section-title" style="color: #0056b3;">Contact</h2>
+
+    <div class="contact__container bd-grid">
+        <form action="" class="contact__form" style="background-color: transparent; padding: 20px;">
+            <div class="input-group" style="position: relative; margin-bottom: 15px;">
+                <i class="fas fa-user" style="position: absolute; top: 12px; left: 10px; color: #0056b3;"></i>
+                <input type="text" placeholder="Nom" class="contact__input" data-sr-id="27" style="margin-left: 30px; border: 1px solid #ccc; border-radius: 5px; width: 100%; padding: 12px; font-size: 16px; color: #333; outline: none;">
+            </div>
+            <div class="input-group" style="position: relative; margin-bottom: 15px;">
+                <i class="fas fa-envelope" style="position: absolute; top: 12px; left: 10px; color: #0056b3;"></i>
+                <input type="email" placeholder="Email" class="contact__input" data-sr-id="28" style="margin-left: 30px; border: 1px solid #ccc; border-radius: 5px; width: 100%; padding: 12px; font-size: 16px; color: #333; outline: none;">
+            </div>
+            <div class="input-group" style="position: relative; margin-bottom: 20px;">
+                <i class="fas fa-comment" style="position: absolute; top: 12px; left: 10px; color: #0056b3;"></i>
+                <textarea name="" id="" cols="0" rows="10" class="contact__input" data-sr-id="29" placeholder="Votre message" style="margin-left: 30px; border: 1px solid #ccc; border-radius: 5px; width: 100%; padding: 12px; font-size: 16px; color: #333; outline: none;"></textarea>
+            </div>
+            <input type="button" value="Envoyer" class="contact__button button" onclick="alert('Cette fonctionnalité n\'est pas encore prête, mais vous pouvez me contacter à l\'adresse toscanisoft@gmail.com')" style="background-color: #0056b3; color: white; padding: 15px 25px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        </form>
+    </div>
+</section>
+
+<!--===== PIED DE PAGE =====-->
+<footer class="footer">
+    <p class="footer__title">Toscani Tenekeu</p>
+    <div class="footer__social">
+            <a href="https://www.linkedin.com/in/toscani-tenekeu" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://twitter.com/toscani_tenekeu" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            <a href="https://github.com/toscani-tenekeu" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="https://instagram.com/toscani_tenekeu" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://portfolio-toscani.vercel.app/" class="footer__icon"><i class='bx bx-globe'></i></a>
+            <a href="https://youtube.com/@toscanisoft" class="footer__icon"><i class='bx bxl-youtube'></i></a>
+    </div>
+    <p class="footer__copy">&#169; 2024 Toscani Tenekeu. Tous droits réservés.</p>
+
+    <style>
+        .footer__icon i {
+            font-size: 2rem; /* Augmente la taille des icônes */
+            color: #0056b3; /* Change la couleur des icônes en blanc */
+            transition: all .1s;
+        }
+
+        .footer__icon i:hover {
+            color: #ccc;
+            font-size: 2.2rem;
+        }
+    
+        .footer__icon {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+    </style>
+    
+</footer>
+
+<!--===== SCROLL REVEAL =====-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--===== MAIN JS =====-->
+<script src="../assets/js/main.js"></script>
+</main>
+</body>
+
+</html>
