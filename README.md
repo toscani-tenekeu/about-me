@@ -1,6 +1,6 @@
 # TOSCANI TENEKEU
 
-Welcome to my GitHub profile! I'm Toscani Tenekeu, a passionate Full-Stack Developer and UI/UX Designer with a love for crafting beautiful and functional digital experiences.
+Welcome to my GitHub profile! I'm Toscani Tenekeu, a passionate Full-Stack Developer and Cybersecurity Expert with a love for crafting beautiful and functional digital experiences.
 
 ## About Me
 
