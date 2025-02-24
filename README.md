@@ -1,15 +1,15 @@
 # TOSCANI TENEKEU
 
-Welcome to my GitHub profile! I'm Toscani Tenekeu, a passionate Full-Stack Developer and Cybersecurity Expert with a love for crafting beautiful and functional digital experiences.
+Welcome to my GitHub profile! I'm Toscani Tenekeu, a passionate Full-Stack Developer with a love for crafting beautiful and functional digital experiences.
 
 ## About Me
 
-With a background in programming and a keen eye for design, I specialize in creating seamless and engaging user interfaces while handling the complexities of Front-end development. My goal is to bridge the gap between aesthetics and functionality to deliver top-notch web and application solutions.
+With a background in programming and a keen eye for design, I specialize in creating seamless and engaging user interfaces while handling the complexities of Full-Stack development. My goal is to bridge the gap between aesthetics and functionality to deliver top-notch web and application solutions.
 
 ## Skills
 
 - **Frontend Development:** HTML, CSS, JavaScript, React, Vue.js, Tailwind
-- **Backend Development:** Node.js, Express, PHP
+- **Backend Development:** Node.js, Express, PHP, Java
 - **Databases:** MongoDB, PostgreSQL, MySQL, Firebase
 - **UI/UX Design:** Wireframing, Prototyping, User Research, Figma, Adobe XD, Sketch
 - **Version Control:** Git, GitHub, GitLab
@@ -28,7 +28,7 @@ Feel free to explore my repositories to see the projects I’m working on and th
 
 - **Email:** [toscanisoft@gmail.com](mailto:toscanisoft@gmail.com)
 - **LinkedIn:** [linkedin.com/in/toscani-tenekeu](https://www.linkedin.com/in/TOSCANI-TENEKEU)
-- **Twitter:** [@toscaniTnk](https://twitter.com/toscaniTnk)
+- **Twitter:** [@toscani_tenekeu](https://twitter.com/toscani_tenekeu)
 
 ## Get In Touch
 
